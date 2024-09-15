@@ -22,7 +22,6 @@ func main() {
 
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /video", func(w http.ResponseWriter, r *http.Request) {
-		log.Print("Found")
 		videoPath := "./videos/SampleVideo_1280x720_1mb.mp4"
 		videoReader, err := os.Open(videoPath)
 		if err != nil {

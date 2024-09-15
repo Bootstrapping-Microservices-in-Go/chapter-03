@@ -6,6 +6,6 @@ You need Go installed to run this.
 
 To start the microservice:
 
-    go run main.go
+    PORT=3000 go run main.go
 
-Then point your browser at http://localhost:8080
+Then point your browser to http://localhost:3000
